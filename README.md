@@ -6,7 +6,7 @@
 -タイピング練習をするアプリ
 
 ## ③DEMO
-（任意）デプロイしている場合はURLを記入
+https://shihoko-terasaki.github.io/kadai02_janken_richver/
 
 ## ④工夫した点・こだわった点
 -タイピングが正しいときは色が変わる。間違っていると赤字にかわる。-
