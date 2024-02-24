@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Zen+Antique&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* 画面いっぱいの高さ */
+ height: 100vh; 
+  /* 画面中央 */
+ display: flex;
+  /* 縦に対して・・・ */
+ align-items: center;
+  /* 画面中央に寄せる */
+ justify-content: center;
+  /* スクロールしないようにする */
+ overflow: hidden;
+  /* background-color: rgb(185, 230, 224); */
+  /* 左上に向かってグラデーションをする */
+ background: linear-gradient(
+    to left top,
+    rgb(248, 245, 245),
+    rgb(244, 156, 45)
+  );
+  font-family: "Poppins", sans-serif;
+}
+
+/* タイピングゲームの枠内 */
+.container {
+  background-color: rgb(255, 238, 125);
+  font-size: 2.4rem;
+  font-weight: 600;
+  /* 内側の余白 */
+  padding: 4rem;
+  /* 丸みをつける */
+  border-radius: 1.5rem;
+  /* 幅 */
+  width: 1000px;
+  /* ミニマムの高さ */
+  min-height: 600px;
+  /* 最大の幅 */
+  max-width: 90%;
+  /* 影をつける */
+  box-shadow: 1px 5px 6px rgb(104, 104, 104);
+}
+/* タイピング部分 */
+.container .type-input {
+ /* 上に少し余白を付ける */
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+/* タイマー */
+.timer {
+  /* ポジション絶対値 */
+  position: absolute;
+  top: 2rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgb(104, 104, 104);
+}
+/* タイプした文字が表示される枠 */
+.type-display {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.type-input {
+  /* 背景透明 */
+  background: transparent;
+  /* 枠線 */
+  border: 3px solid rgb(3, 93, 31);
+  /* フォーカスしたとき余計な余白がないようにする */
+  outline: none;
+  width: 100%;
+  height: 14rem;
+  /* 上下余白均等にして中央に寄せる */
+  margin: auto;
+  /* 枠線の固定される */
+  resize: none;  
+  padding: 0.5rem 1rem;
+  /* 丸みを帯びさせる */
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+/* フォーカスされたとき枠の色が変わる */
+.type-input:focus {
+  border-color: rgb(196, 215, 0);
+}
+/* 正しいときは色を変える */
+.correct {
+  color: green;
+}
+/* 間違ったら赤文字で表示 */
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
+
+
+
